@@ -8,6 +8,7 @@ import { DB_HOST, DB_NAME,
 //nombre de la base de datos (database_app) - usuario (root) pasword nada. 
 const db = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD,{
     host:DB_HOST,
+    port:DB_PORT,
     dialect: 'mysql'
 });
 
